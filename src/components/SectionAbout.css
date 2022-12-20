@@ -1,0 +1,28 @@
+/* Section About */
+
+#about {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+#about .about-img {
+  width: 90%;
+  height: auto;
+}
+
+#about ul.about-list {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#about ul.about-list li {
+  display: flex;
+  align-items: center;
+}
+#about ul.about-list li p {
+  margin-bottom: 16px;
+}
+#about ul.about-list .imgCheckmark {
+  margin-right: 16px;
+}
+
+/* End of section About */

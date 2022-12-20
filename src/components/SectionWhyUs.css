@@ -1,0 +1,21 @@
+/* Section Why Us */
+
+#whyus {
+  padding-bottom: 60px;
+}
+
+#whyus .custom-Card-Whyus {
+  border-radius: 12px;
+  border-width: 2px;
+}
+#whyus .custom-Card-Whyus .card-body {
+  padding: 25px;
+}
+#whyus .custom-Card-Whyus .fa-Custom-Whyus {
+  font-size: 1.5em;
+}
+#whyus .custom-Card-Whyus .fa-Custom-Whyus i {
+  vertical-align: middle;
+}
+
+/* End of Section Why Us */

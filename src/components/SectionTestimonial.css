@@ -1,0 +1,82 @@
+/* Section Testimonial */
+
+#testimonial {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+#testimonial .carousel-testicard {
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#testimonial .testi-card {
+  background-color: #f1f3ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: none;
+}
+
+#testimonial #myCarousel .carousel-control-prev,
+#testimonial #myCarousel .carousel-control-next {
+  opacity: 1;
+  position: initial;
+  width: 60px;
+  margin: 0 15px;
+}
+
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial {
+  font-size: 21px;
+}
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial i {
+  vertical-align: middle;
+}
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial i.fa-circle {
+  color: #fff;
+  text-shadow: -1px 0 #c4c4c4, 0 1px #c4c4c4, 1px 0 #c4c4c4, 0 -1px #c4c4c4;
+  transition: 0.3s ease;
+}
+#testimonial #myCarousel .carousel-control-prev .carousel-control-prev-icon,
+#testimonial #myCarousel .carousel-control-next .carousel-control-next-icon {
+  color: #222;
+  transition: 0.3s ease;
+}
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-circle {
+  color: #5cb85f;
+  text-shadow: -1px 0 #5cb85f, 0 1px #5cb85f, 1px 0 #5cb85f, 0 -1px #5cb85f;
+}
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-chevron-left,
+#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-chevron-right {
+  color: #fff;
+}
+
+@media only screen and (min-width: 769px) {
+  #testimonial .testi-card .card-body {
+    padding: 69px 32px 49px 46px;
+  }
+  #testimonial .testi-card .client-img {
+    width: 100%;
+    height: auto;
+  }
+
+  #testimonial .carousel-inner,
+  #testimonial .carousel-inner > .carousel-item {
+    overflow: hidden;
+  }
+  #testimonial .carousel-inner > .carousel-item.active,
+  #testimonial .carousel-inner > .carousel-item-next,
+  #testimonial .carousel-inner > .carousel-item-prev {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #testimonial .carousel-control-prev {
+    z-index: 2000;
+  }
+
+  #testimonial .carousel-control-next {
+    z-index: 2000;
+  }
+}
+
+/* End of Section Testimonial */
