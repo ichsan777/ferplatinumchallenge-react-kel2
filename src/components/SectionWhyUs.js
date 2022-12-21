@@ -17,7 +17,7 @@ const SectionWhyUs = () => {
               <div className="col-lg-3 col-md-6 mb-2">
                 <div className="card h-100 custom-Card-Whyus">
                   <div className="card-body">
-                    <img src={IconComplete} className="img-fluid mb-4"></img>
+                    <img src={IconComplete} className="img-fluid mb-4" alt="icon complete"></img>
                     <h3 className="whyus-Title fs-4 fw-bold mb-4">Mobil Lengkap</h3>
                     <p className="whyus-Desc fs-5 fw-bold mb-2">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
                   </div>
@@ -26,7 +26,7 @@ const SectionWhyUs = () => {
               <div className="col-lg-3 col-md-6 mb-2">
                 <div className="card h-100 custom-Card-Whyus">
                   <div className="card-body">
-                    <img src={IconPrice} className="img-fluid mb-4"></img>
+                    <img src={IconPrice} className="img-fluid mb-4" alt="icon price"></img>
                     <h3 className="whyus-Title fs-4 fw-bold mb-4">Harga Murah</h3>
                     <p className="whyus-Desc fs-5 fw-bold mb-2">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
                   </div>
@@ -35,7 +35,7 @@ const SectionWhyUs = () => {
               <div className="col-lg-3 col-md-6 mb-2">
                 <div className="card h-100 custom-Card-Whyus">
                   <div className="card-body">
-                    <img src={Icon24H} className="img-fluid mb-4"></img>
+                    <img src={Icon24H} className="img-fluid mb-4" alt="icon 24h"></img>
                     <h3 className="whyus-Title fs-4 fw-bold mb-4">Layanan 24 Jam</h3>
                     <p className="whyus-Desc fs-5 fw-bold mb-2">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
                   </div>
@@ -44,7 +44,7 @@ const SectionWhyUs = () => {
               <div className="col-lg-3 col-md-6 mb-2">
                 <div className="card h-100 custom-Card-Whyus">
                   <div className="card-body">
-                    <img src={IconProfessional} className="img-fluid mb-4"></img>
+                    <img src={IconProfessional} className="img-fluid mb-4" alt="icon professional"></img>
                     <h3 className="whyus-Title fs-4 fw-bold mb-4">Sopir Profesional</h3>
                     <p className="whyus-Desc fs-5 fw-bold mb-2">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
                   </div>

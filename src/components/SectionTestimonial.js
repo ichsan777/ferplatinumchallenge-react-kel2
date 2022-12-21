@@ -1,11 +1,63 @@
 import React from "react";
 import "./SectionTestimonial.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Client1 from "../assets/img/client-test1.png";
 import Client2 from "../assets/img/client-test2.png";
 import RatingStar from "../assets/img/Rate.png";
-import Carousel from "react-bootstrap/Carousel";
+
+const screenWidth = window.innerWidth;
 
 const SectionTestimonial = () => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+      centerMode: false,
+    },
+  };
+
+  const CustomRightArrow = ({ onClick }) => {
+    return (
+      <div className="navArrowContainerRight" onClick={() => onClick()}>
+        <span class="fa-stack fa-custom-testimonial" className="rightArrow">
+          <i class="fa-solid fa-circle fa-stack-2x"></i>
+          <i class="fa-solid fa-chevron-right fa-stack-1x"></i>
+        </span>
+      </div>
+    );
+  };
+  const CustomLeftArrow = ({ onClick }) => {
+    return (
+      <div className="navArrowContainerLeft" onClick={() => onClick()}>
+        <span class="fa-stack fa-custom-testimonial" className="leftArrow">
+          <i class="fa-solid fa-circle fa-stack-2x"></i>
+          <i class="fa-solid fa-chevron-left fa-stack-1x"></i>
+        </span>
+      </div>
+    );
+  };
+
+  const ButtonGroup = ({ next, previous }) => {
+    return (
+      <div className="carousel-button-group">
+        <CustomLeftArrow onClick={() => previous()} />
+        <CustomRightArrow onClick={() => next()} />
+      </div>
+    );
+  };
+
   return (
     <section id="testimonial" className="">
       <div className="container-fluid">
@@ -13,8 +65,21 @@ const SectionTestimonial = () => {
           <div className="col">
             <h2 className="fs-1 fw-bold mb-4 text-center">Testimonial</h2>
             <p className="fs-5 fw-bold mb-5 text-center">Berbagai review positif dari para pelanggan kami</p>
-            <Carousel id="myCarousel" indicators={false}>
-              <Carousel.Item>
+            <div className="myCarousel">
+              <Carousel
+                centerMode={screenWidth > 464 ? true : false}
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                responsive={responsive}
+                infinite={true}
+                keyBoardControl={false}
+                transitionDuration={500}
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                arrows={false}
+                renderButtonGroupOutside={true}
+                customButtonGroup={<ButtonGroup />}
+              >
                 <div className="card testi-card">
                   <div className="card-body">
                     <div className="row align-items-center">
@@ -32,8 +97,6 @@ const SectionTestimonial = () => {
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-              <Carousel.Item>
                 <div className="card testi-card">
                   <div className="card-body">
                     <div className="row align-items-center">
@@ -51,8 +114,6 @@ const SectionTestimonial = () => {
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-              <Carousel.Item>
                 <div className="card testi-card">
                   <div className="card-body">
                     <div className="row align-items-center">
@@ -70,8 +131,8 @@ const SectionTestimonial = () => {
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-            </Carousel>
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>

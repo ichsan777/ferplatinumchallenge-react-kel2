@@ -9,7 +9,7 @@ const SectionAbout = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 mb-5">
-            <img src={AboutHero} alt="image-services" className="img-fluid about-img" />
+            <img src={AboutHero} alt="services" className="img-fluid about-img" />
           </div>
           <div className="col-md-6">
             <h2 className="mb-4 fs-1 fw-bold">Best Car Rental for any kind of trip in (Lokasimu)!</h2>

@@ -11,7 +11,7 @@ const SectionHeroBanner = () => {
             <div className="banner-left">
               <h1 className="fw-bold banner-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
               <p className="fs-5 fw-bold mt-4 mb-3">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-              <a className="btn btn-success btn-lg" href="#" role="button">
+              <a className="btn btn-success btn-lg" href="./home" role="button">
                 Mulai Sewa Mobil
               </a>
             </div>

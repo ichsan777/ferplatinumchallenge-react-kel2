@@ -15,38 +15,50 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   border: none;
+  margin: 10px 15px;
 }
 
-#testimonial #myCarousel .carousel-control-prev,
-#testimonial #myCarousel .carousel-control-next {
-  opacity: 1;
-  position: initial;
+#testimonial .myCarousel .navArrowContainerLeft {
   width: 60px;
-  margin: 0 15px;
+  position: absolute;
+  left: 45vw;
+  margin-top: 30px;
+}
+#testimonial .myCarousel .navArrowContainerRight {
+  width: 60px;
+  position: absolute;
+  right: 45vw;
+  margin-top: 30px;
 }
 
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial {
+#testimonial .myCarousel .rightArrow,
+#testimonial .myCarousel .leftArrow {
   font-size: 21px;
+  display: flex;
+  align-items: center;
 }
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial i {
+#testimonial .myCarousel .rightArrow i,
+#testimonial .myCarousel .leftArrow i {
   vertical-align: middle;
 }
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial i.fa-circle {
+#testimonial .myCarousel .rightArrow i.fa-circle,
+#testimonial .myCarousel .leftArrow i.fa-circle {
   color: #fff;
   text-shadow: -1px 0 #c4c4c4, 0 1px #c4c4c4, 1px 0 #c4c4c4, 0 -1px #c4c4c4;
   transition: 0.3s ease;
 }
-#testimonial #myCarousel .carousel-control-prev .carousel-control-prev-icon,
-#testimonial #myCarousel .carousel-control-next .carousel-control-next-icon {
+#testimonial .myCarousel .leftArrow,
+#testimonial .myCarousel .rightArrow {
   color: #222;
   transition: 0.3s ease;
 }
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-circle {
+#testimonial .myCarousel .rightArrow:hover i.fa-circle,
+#testimonial .myCarousel .leftArrow:hover i.fa-circle {
   color: #5cb85f;
   text-shadow: -1px 0 #5cb85f, 0 1px #5cb85f, 1px 0 #5cb85f, 0 -1px #5cb85f;
 }
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-chevron-left,
-#testimonial #myCarousel .carousel-nav-container .fa-custom-testimonial:hover i.fa-chevron-right {
+#testimonial .myCarousel .leftArrow:hover i.fa-chevron-left,
+#testimonial .myCarousel .rightArrow:hover i.fa-chevron-right {
   color: #fff;
 }
 
@@ -58,24 +70,16 @@
     width: 100%;
     height: auto;
   }
-
-  #testimonial .carousel-inner,
-  #testimonial .carousel-inner > .carousel-item {
-    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  #testimonial .myCarousel .navArrowContainerLeft {
+    left: 30vw;
   }
-  #testimonial .carousel-inner > .carousel-item.active,
-  #testimonial .carousel-inner > .carousel-item-next,
-  #testimonial .carousel-inner > .carousel-item-prev {
-    display: flex;
-    flex-wrap: nowrap;
+  #testimonial .myCarousel .navArrowContainerRight {
+    right: 30vw;
   }
-
-  #testimonial .carousel-control-prev {
-    z-index: 2000;
-  }
-
-  #testimonial .carousel-control-next {
-    z-index: 2000;
+  #testimonial .testi-card {
+    text-align: center;
   }
 }
 

@@ -11,32 +11,32 @@ function OffCanvasExample({ ...props }) {
 
   return (
     <>
-      <a class="offcanvas-button" data-bs-toggle="offcanvas" role="button">
+      <a className="offcanvas-button" data-bs-toggle="offcanvas" role="button">
         <img src={burgerMenu} alt="menu-mobile" onClick={handleShow} />
       </a>
       <Offcanvas show={show} onHide={handleClose} {...props} className="w-75 customOffCanvas">
         <Offcanvas.Header closeButton>
-          <h5 class="fw-5">BCR</h5>
+          <h5 className="fw-5">BCR</h5>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ul class="navbar-nav ms-auto fs-5 fw-normal">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+          <ul className="navbar-nav ms-auto fs-5 fw-normal">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
                 Our Services
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 Why Us
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 Testimonial
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 FAQ
               </a>
             </li>
@@ -49,33 +49,33 @@ function OffCanvasExample({ ...props }) {
 
 const DefaultHeader = () => {
   return (
-    <nav id="headerNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand bg-primary text-light p-2" href="#">
+    <nav id="headerNavbar" className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <a className="navbar-brand bg-primary text-light p-2" href="/">
           Car Rental
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto fs-5 fw-normal">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto fs-5 fw-normal">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
                 Our Services
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 Why Us
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 Testimonial
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="/">
                 FAQ
               </a>
             </li>
