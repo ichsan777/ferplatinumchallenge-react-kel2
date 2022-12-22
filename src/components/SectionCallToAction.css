@@ -1,0 +1,30 @@
+/* Section CTA */
+
+#cta {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#cta .container-cta {
+  background: #0d28a6;
+  border-radius: 13px;
+  padding: 64px;
+}
+
+#cta .heading-cta {
+  font-size: 45px;
+}
+#cta .desc-cta {
+  margin-bottom: 60px;
+}
+#cta .button-cta {
+  background: #5cb85f;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  padding: 8px 12px;
+}
+#cta .button-cta:hover {
+  background: #5cb85fb4;
+}
+
+/* End of Section CTA */

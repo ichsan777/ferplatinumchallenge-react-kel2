@@ -1,5 +1,9 @@
 /* Navbar/Header */
 
+#headerNavbar {
+  background-color: #f1f3ff;
+}
+
 @media only screen and (min-width: 991px) {
   nav#headerNavbar a.offcanvas-button {
     display: none;

@@ -1,0 +1,24 @@
+/* Section FAQ */
+
+#faq {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+#faq #faqAccordion .accordion-item {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#faq #faqAccordion .accordion-button {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 20px;
+  padding: 18px 24px;
+}
+#faq #faqAccordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* End of Section FAQ */

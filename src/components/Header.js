@@ -49,7 +49,7 @@ function OffCanvasExample({ ...props }) {
 
 const DefaultHeader = () => {
   return (
-    <nav id="headerNavbar" className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="headerNavbar" className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand bg-primary text-light p-2" href="/">
           Car Rental

@@ -31,9 +31,9 @@ const SectionTestimonial = () => {
   const CustomRightArrow = ({ onClick }) => {
     return (
       <div className="navArrowContainerRight" onClick={() => onClick()}>
-        <span class="fa-stack fa-custom-testimonial" className="rightArrow">
-          <i class="fa-solid fa-circle fa-stack-2x"></i>
-          <i class="fa-solid fa-chevron-right fa-stack-1x"></i>
+        <span className="fa-stack fa-custom-testimonial rightArrow">
+          <i className="fa-solid fa-circle fa-stack-2x"></i>
+          <i className="fa-solid fa-chevron-right fa-stack-1x"></i>
         </span>
       </div>
     );
@@ -41,9 +41,9 @@ const SectionTestimonial = () => {
   const CustomLeftArrow = ({ onClick }) => {
     return (
       <div className="navArrowContainerLeft" onClick={() => onClick()}>
-        <span class="fa-stack fa-custom-testimonial" className="leftArrow">
-          <i class="fa-solid fa-circle fa-stack-2x"></i>
-          <i class="fa-solid fa-chevron-left fa-stack-1x"></i>
+        <span className="fa-stack fa-custom-testimonial leftArrow">
+          <i className="fa-solid fa-circle fa-stack-2x"></i>
+          <i className="fa-solid fa-chevron-left fa-stack-1x"></i>
         </span>
       </div>
     );
@@ -74,7 +74,7 @@ const SectionTestimonial = () => {
                 responsive={responsive}
                 infinite={true}
                 keyBoardControl={false}
-                transitionDuration={500}
+                transitionDuration={1000}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 arrows={false}
                 renderButtonGroupOutside={true}

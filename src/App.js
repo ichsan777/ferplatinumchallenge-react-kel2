@@ -1,21 +1,14 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./config/Router";
 import NormalHeader from "./components/Header";
-import SectionHeroBanner from "./components/SectionHeroBanner";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SectionAbout from "./components/SectionAbout";
-import SectionWhyUs from "./components/SectionWhyUs";
-import SectionTestimonial from "./components/SectionTestimonial";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: [<NormalHeader />, <SectionHeroBanner />, <SectionAbout />, <SectionWhyUs />, <SectionTestimonial />],
-  },
-]);
+import NormalFooter from "./components/Footer";
 
 function App() {
   return (
     <div>
+      <NormalHeader />
       <RouterProvider router={router} />
+      <NormalFooter />
     </div>
   );
 }
