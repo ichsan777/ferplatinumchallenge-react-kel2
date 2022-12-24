@@ -5,11 +5,14 @@ import "./SectionHasilPencarianMobil.css";
 import CardMobil from "./CardMobil";
 
 const SectionHasilPencarianMobil = () => {
+  // declaring variable
   const [cars, setCars] = useState([]);
+  var filteredCars = [];
   const location = useLocation();
   const filterArr = location.state;
 
   useEffect(() => {
+    //get data from api
     const urlAPI = "https://bootcamp-rent-cars.herokuapp.com";
     const config = {
       headers: {
@@ -19,14 +22,28 @@ const SectionHasilPencarianMobil = () => {
 
     axios
       .get(`${urlAPI}/admin/v2/car`, config)
-      .then((res) => {
-        const tempCars = res.data.cars;
+      .then(async (res) => {
+        const tempCars = await res.data.cars;
         setCars(tempCars);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  // filtering array cars
+  // filtering nama dahulu
+  if (filterArr.name !== "") {
+    filteredCars = cars.filter((obj) => obj.name.toLowerCase().indexOf(filterArr.namaMobil.toLowerCase()) >= 0);
+  }
+  // filtering kategori
+  if (filterArr.category !== "default") {
+    filteredCars = filteredCars.filter((obj) => obj.category == filterArr.kategoriMobil);
+  }
+  // filtering Price
+  //filtering price
+
+  console.log(filteredCars);
 
   return (
     <section id="hasilPencarian">

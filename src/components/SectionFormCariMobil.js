@@ -45,9 +45,9 @@ const SectionFormCariMobil = () => {
                   <option value="default" disabled>
                     Masukan Kapasitas Mobil
                   </option>
-                  <option value="2to4">2 - 4 orang</option>
-                  <option value="4to6">4 - 6 orang</option>
-                  <option value="6to8">6 - 8 orang</option>
+                  <option value="small">2 - 4 orang</option>
+                  <option value="medium">4 - 6 orang</option>
+                  <option value="large">6 - 8 orang</option>
                 </select>
               </div>
               <div className="col-lg">

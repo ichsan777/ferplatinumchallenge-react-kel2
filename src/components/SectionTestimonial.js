@@ -74,7 +74,7 @@ const SectionTestimonial = () => {
                 responsive={responsive}
                 infinite={true}
                 keyBoardControl={false}
-                transitionDuration={1000}
+                transitionDuration={500}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 arrows={false}
                 renderButtonGroupOutside={true}

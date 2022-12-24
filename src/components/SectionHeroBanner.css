@@ -25,6 +25,11 @@ section.section-custom-padding {
   z-index: 2;
 }
 
+@media only screen and (min-width: 1401px) {
+  #hero-banner .banner-left {
+    margin-left: 15% !important;
+  }
+}
 @media only screen and (min-width: 1000px) {
   #hero-banner .banner-left {
     margin-left: -20px;

@@ -7,7 +7,7 @@ const SectionHeroBannerCariMobil = () => {
     <section id="heroBannerCariMobil" className="pt-5 bg-banner">
       <div className="container-fluid">
         <div className="row align-items-center justify-content-end">
-          <div className="col-xxl-4 col-lg-5">
+          <div className="col-lg-5">
             <div className="banner-left">
               <h1 className="fw-bold banner-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
               <p className="fs-5 fw-bold mt-4 mb-3">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
