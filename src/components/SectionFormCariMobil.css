@@ -1,12 +1,12 @@
 /* Section Form Cari Mobil */
 
-#form-pencarian {
+#formPencarianCariMobil {
   margin-bottom: 120px;
   z-index: 5;
   position: relative;
 }
 
-#form-pencarian .form-box {
+#formPencarianCariMobil .form-box {
   border-radius: 8px;
   padding: 30px 24px 24px 24px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -15,55 +15,55 @@
   background-color: #fff;
   position: relative;
 }
-#form-pencarian .form-box:focus-within {
+#formPencarianCariMobil .form-box:focus-within {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 
-#form-pencarian .form-box form input,
-#form-pencarian .form-box form select,
-#form-pencarian .form-box form select option {
+#formPencarianCariMobil .form-box form input,
+#formPencarianCariMobil .form-box form select,
+#formPencarianCariMobil .form-box form select option {
   transition: 0.3s ease;
 }
-#form-pencarian .form-box form select option {
+#formPencarianCariMobil .form-box form select option {
   padding: 10px 11px;
 }
-#form-pencarian .form-box form select#statusMobil {
+#formPencarianCariMobil .form-box form select#statusMobil {
   font-weight: 700;
   color: #8a8a8a;
 }
-#form-pencarian .form-box form input:focus {
+#formPencarianCariMobil .form-box form input:focus {
   border: solid 1px #35b0a7;
   box-shadow: none;
 }
-#form-pencarian .form-box form select:focus {
+#formPencarianCariMobil .form-box form select:focus {
   border: solid 1px #5cb85f;
   box-shadow: none;
 }
-#form-pencarian .form-box form option:hover {
+#formPencarianCariMobil .form-box form option:hover {
   background-color: #c9e7ca;
   color: #5cb85f;
   font-weight: 700;
   box-shadow: none;
 }
-#form-pencarian .form-box .buttonSubmit {
+#formPencarianCariMobil .form-box .buttonSubmit {
   margin-top: 32px;
   background-color: #5cb85f;
   border-color: #5cb85f;
 }
-#form-pencarian .form-box .buttonSubmit:hover {
+#formPencarianCariMobil .form-box .buttonSubmit:hover {
   background-color: #3b923e;
 }
 
 @media only screen and (min-width: 992px) {
-  #form-pencarian .form-box .submitColumn {
+  #formPencarianCariMobil .form-box .submitColumn {
     width: 10%;
   }
-  #form-pencarian {
+  #formPencarianCariMobil {
     transform: translateY(-50%);
   }
 }
 @media only screen and (max-width: 991px) {
-  #form-pencarian {
+  #formPencarianCariMobil {
     margin-top: -30px;
     margin-right: 10px;
     margin-left: 10px;

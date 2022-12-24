@@ -15,7 +15,7 @@ const NormalFooter = () => {
           <div className="row">
             <div className="col-lg-3 footer-1 footer-col">
               <p className="fs-5 fw-bold mb-3 text-start">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
-              <a href="mailto:binarcarrental@gmail.com" target="_blank">
+              <a href="mailto:binarcarrental@gmail.com" target="_blank" rel="noopener noreferrer">
                 binarcarrental@gmail.com
               </a>
               <p className="fs-5 fw-bold text-start">081-233-334-808</p>
@@ -30,25 +30,25 @@ const NormalFooter = () => {
             </div>
             <div className="col-lg-3 footer-3 footer-col">
               <p className="fs-5 fw-bold mb-3 text-start">Connect with us</p>
-              <a href="#" target="_blank" className="footer-sosmed footer-sosmed-first">
+              <a href="/" target="_blank" className="footer-sosmed footer-sosmed-first">
                 <img src={iconFacebook} alt="sosmed-fb" />
               </a>
-              <a href="#" target="_blank" className="footer-sosmed">
+              <a href="/" target="_blank" className="footer-sosmed">
                 <img src={iconInstagram} alt="sosmed-ig" />
               </a>
-              <a href="#" target="_blank" className="footer-sosmed">
+              <a href="/" target="_blank" className="footer-sosmed">
                 <img src={iconTwitter} alt="sosmed-twitter" />
               </a>
-              <a href="#" target="_blank" className="footer-sosmed">
+              <a href="/" target="_blank" className="footer-sosmed">
                 <img src={iconEmail} alt="sosmed-mail" />
               </a>
-              <a href="#" target="_blank" className="footer-sosmed">
+              <a href="/" target="_blank" className="footer-sosmed">
                 <img src={iconTwitch} alt="sosmed-twitch" />
               </a>
             </div>
             <div className="col-lg-3 footer-4 footer-col">
               <p className="fs-5 fw-bold mb-3 text-start">Copyright Binar 2022</p>
-              <img src={logoKotakBiru} alt="image-kotak" />
+              <img src={logoKotakBiru} alt="Logo Kotak" />
             </div>
           </div>
         </div>

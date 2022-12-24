@@ -8,6 +8,8 @@ import SectionFrequentlyAskedQuestion from "../components/SectionFrequentlyAsked
 import SectionHeroBannerCariMobil from "../components/SectionHeroBannerCariMobil";
 import SectionFormCariMobil from "../components/SectionFormCariMobil";
 import SectionPageTitle from "../components/SectionPageTitle";
+import SectionFormHasilCariMobil from "../components/SectionFormHasilCariMobil";
+import SectionHasilPencarianMobil from "../components/SectionHasilPencarianMobil";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +22,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/hasilcari",
-    element: [<SectionPageTitle />],
+    element: [<SectionPageTitle />, <SectionFormHasilCariMobil />, <SectionHasilPencarianMobil />],
   },
 ]);

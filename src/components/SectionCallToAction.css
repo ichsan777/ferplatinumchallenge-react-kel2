@@ -27,4 +27,11 @@
   background: #5cb85fb4;
 }
 
+@media only screen and (max-width: 990px) {
+  #cta {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 /* End of Section CTA */

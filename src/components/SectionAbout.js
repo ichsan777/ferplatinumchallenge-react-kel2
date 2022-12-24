@@ -1,6 +1,5 @@
 import React from "react";
 import "./SectionAbout.css";
-import IconCheckmark from "../assets/img/Group 53.png";
 import AboutHero from "../assets/img/img_service.png";
 
 const SectionAbout = () => {
@@ -17,31 +16,11 @@ const SectionAbout = () => {
               Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
             </p>
             <ul className="fa-ul about-list fs-5 fw-bold">
-              <li>
-                <p>
-                  <img src={IconCheckmark} alt="icon checkmark" className="img-fluid imgCheckmark"></img>Sewa Mobil Dengan Supir di Bali 12 Jam
-                </p>
-              </li>
-              <li>
-                <p>
-                  <img src={IconCheckmark} alt="icon checkmark" className="img-fluid imgCheckmark"></img>Sewa Mobil Lepas Kunci di Bali 24 Jam
-                </p>
-              </li>
-              <li>
-                <p>
-                  <img src={IconCheckmark} alt="icon checkmark" className="img-fluid imgCheckmark"></img>Sewa Mobil Jangka Panjang Bulanan
-                </p>
-              </li>
-              <li>
-                <p>
-                  <img src={IconCheckmark} alt="icon checkmark" className="img-fluid imgCheckmark"></img>Gratis Antar - Jemput Mobil di Bandara
-                </p>
-              </li>
-              <li>
-                <p>
-                  <img src={IconCheckmark} alt="icon checkmark" className="img-fluid imgCheckmark"></img>Layanan Airport Transfer / Drop In Out
-                </p>
-              </li>
+              <li>Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+              <li>Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+              <li>Sewa Mobil Jangka Panjang Bulanan</li>
+              <li>Gratis Antar - Jemput Mobil di Bandara</li>
+              <li>Layanan Airport Transfer / Drop In Out</li>
             </ul>
           </div>
         </div>

@@ -15,14 +15,16 @@
   padding-left: 0px;
 }
 #about ul.about-list li {
-  display: flex;
-  align-items: center;
-}
-#about ul.about-list li p {
+  padding-left: 35px;
   margin-bottom: 16px;
 }
-#about ul.about-list .imgCheckmark {
-  margin-right: 16px;
+#about ul.about-list li::before {
+  content: url("../assets/img/Group\ 53.png");
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 4px;
 }
 
 /* End of section About */

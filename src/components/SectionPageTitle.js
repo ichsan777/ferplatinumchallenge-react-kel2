@@ -4,9 +4,9 @@ import "./SectionPageTitle.css";
 const SectionPageTitle = () => {
   return (
     <section id="pageTitle">
-      <div class="container">
-        <div class="row">
-          <div class="col"></div>
+      <div className="container">
+        <div className="row">
+          <div className="col"></div>
         </div>
       </div>
     </section>

@@ -1,47 +1,24 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./SectionFormCariMobil.css";
+import React from "react";
+import "./SectionFormHasilCariMobil.css";
 
-const initialValues = {
-  namaMobil: "",
-  kategoriMobil: "default",
-  hargaMobil: "default",
-  statusMobil: "disewa",
-};
-
-const SectionFormCariMobil = () => {
-  const [values, setValues] = useState(initialValues);
-  const navigate = useNavigate();
-
-  const handleInputChange = (e) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/hasilcari", { state: { namaMobil: values.namaMobil, kategoriMobil: values.kategoriMobil, hargaMobil: values.hargaMobil, statusMobil: values.statusMobil } });
-  };
-
+const SectionFormHasilCariMobil = () => {
   return (
-    <section id="formPencarianCariMobil">
+    <section id="formPencarianHasilMobil">
       <div className="container">
         <div className="row form-box">
           <div className="col-lg-12">
-            <form className="row g-2" onSubmit={handleSubmit}>
+            <form className="row g-2">
               <div className="col-lg">
                 <label htmlFor="namaMobil" className="form-label">
                   Nama Mobil
                 </label>
-                <input id="namaMobil" name="namaMobil" defaultValue={values.namaMobil} onChange={handleInputChange} type="text" className="form-control" aria-describedby="emailHelp" placeholder="Ketik nama/tipe mobil" />
+                <input id="namaMobil" type="text" className="form-control" aria-describedby="emailHelp" placeholder="Ketik nama/tipe mobil" />
               </div>
               <div className="col-lg">
                 <label htmlFor="kategoriMobil" className="form-label">
                   Kategori
                 </label>
-                <select id="kategoriMobil" name="kategoriMobil" defaultValue={values.kategoriMobil} onChange={handleInputChange} className="form-select" aria-label="Default select example">
+                <select defaultValue={"default"} id="kategoriMobil" className="form-select" aria-label="Default select example">
                   <option value="default" disabled>
                     Masukan Kapasitas Mobil
                   </option>
@@ -54,7 +31,7 @@ const SectionFormCariMobil = () => {
                 <label htmlFor="hargaMobil" className="form-label">
                   Harga
                 </label>
-                <select id="hargaMobil" name="hargaMobil" defaultValue={values.hargaMobil} onChange={handleInputChange} className="form-select" aria-label="Default select example">
+                <select defaultValue={"default"} id="hargaMobil" className="form-select" aria-label="Default select example">
                   <option value="default" disabled>
                     Masukan Harga Sewa per Hari
                   </option>
@@ -67,14 +44,14 @@ const SectionFormCariMobil = () => {
                 <label htmlFor="statusMobil" className="form-label">
                   Status
                 </label>
-                <select id="statusMobil" name="statusMobil" defaultValue={values.statusMobil} onChange={handleInputChange} className="form-select" aria-label="Default select example">
+                <select defaultValue={"disewa"} id="statusMobil" className="form-select" aria-label="Default select example">
                   <option value="disewa">Disewa</option>
                   <option value="free">Free</option>
                 </select>
               </div>
               <div className="col-lg-1 submitColumn">
                 <button type="submit" className="btn btn-primary buttonSubmit">
-                  Cari Mobil
+                  Edit
                 </button>
               </div>
             </form>
@@ -85,4 +62,4 @@ const SectionFormCariMobil = () => {
   );
 };
 
-export default SectionFormCariMobil;
+export default SectionFormHasilCariMobil;
