@@ -29,21 +29,35 @@ const SectionHasilPencarianMobil = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [filterArr]);
 
-  // filtering array cars
-  // filtering nama dahulu
-  if (filterArr.name !== "") {
-    filteredCars = cars.filter((obj) => obj.name.toLowerCase().indexOf(filterArr.namaMobil.toLowerCase()) >= 0);
-  }
-  // filtering kategori
-  if (filterArr.category !== "default") {
-    filteredCars = filteredCars.filter((obj) => obj.category == filterArr.kategoriMobil);
-  }
-  // filtering Price
-  //filtering price
+  // filter function
+  const filteringCars = () => {
+    // filtering array cars
+    // filtering nama dahulu
+    if (filterArr.namaMobil !== "") {
+      filteredCars = filteredCars.filter((obj) => obj.name.toLowerCase().indexOf(filterArr.namaMobil.toLowerCase()) >= 0);
+    }
+    // filtering kategori
+    if (filterArr.kategoriMobil !== "default") {
+      filteredCars = filteredCars.filter((obj) => obj.category === filterArr.kategoriMobil);
+    }
+    // filtering Price
+    if (filterArr.hargaMobil === "under400") {
+      filteredCars = filteredCars.filter((obj) => obj.price < 400000);
+    } else if (filterArr.hargaMobil === "400600") {
+      filteredCars = filteredCars.filter((obj) => obj.price >= 400000 && obj.price <= 600000);
+    } else if (filterArr.hargaMobil === "above400") {
+      filteredCars = filteredCars.filter((obj) => obj.price > 400000);
+    }
+    // filtering status
+    filteredCars = filteredCars.filter((obj) => obj.status === filterArr.statusMobil);
+  };
 
-  console.log(filteredCars);
+  filteredCars = cars;
+  filteringCars(filteredCars);
+  // check hasil data filtering
+  // console.log(filteredCars);
 
   return (
     <section id="hasilPencarian">
@@ -51,7 +65,7 @@ const SectionHasilPencarianMobil = () => {
         <div className="row rowContainer">
           <div className="col">
             <div className="row">
-              {cars?.map((car) => {
+              {filteredCars?.map((car) => {
                 return <CardMobil name={car.name} image={car.image} price={car.price} carID={car.id} />;
               })}
             </div>

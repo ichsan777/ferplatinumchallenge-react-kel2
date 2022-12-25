@@ -6,7 +6,7 @@ const initialValues = {
   namaMobil: "",
   kategoriMobil: "default",
   hargaMobil: "default",
-  statusMobil: "disewa",
+  statusMobil: false,
 };
 
 const SectionFormCariMobil = () => {
@@ -68,8 +68,8 @@ const SectionFormCariMobil = () => {
                   Status
                 </label>
                 <select id="statusMobil" name="statusMobil" defaultValue={values.statusMobil} onChange={handleInputChange} className="form-select" aria-label="Default select example">
-                  <option value="disewa">Disewa</option>
-                  <option value="free">Free</option>
+                  <option value={true}>Disewa</option>
+                  <option value={false}>Free</option>
                 </select>
               </div>
               <div className="col-lg-1 submitColumn">
