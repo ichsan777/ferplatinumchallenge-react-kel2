@@ -23,6 +23,7 @@ const SectionFormHasilCariMobil = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    values.statusMobil = values.statusMobil === "true" ? true : false;
     navigate("/hasilcari", { state: { namaMobil: values.namaMobil, kategoriMobil: values.kategoriMobil, hargaMobil: values.hargaMobil, statusMobil: values.statusMobil } });
   };
 

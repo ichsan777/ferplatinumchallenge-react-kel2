@@ -29,7 +29,7 @@ const SectionHasilPencarianMobil = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [filterArr]);
+  }, []);
 
   // filter function
   const filteringCars = () => {
@@ -54,10 +54,15 @@ const SectionHasilPencarianMobil = () => {
     filteredCars = filteredCars.filter((obj) => obj.status === filterArr.statusMobil);
   };
 
+  // check hasil data filtering
   filteredCars = cars;
   filteringCars(filteredCars);
-  // check hasil data filtering
-  // console.log(filteredCars);
+  // check apabila array filtered cars kosong karena hasil filter tidak ditemukan, dan reassign data
+  // if (filteredCars.length === 0) {
+  //   filteredCars = cars;
+  // }
+
+  console.log(filterArr);
 
   return (
     <section id="hasilPencarian">

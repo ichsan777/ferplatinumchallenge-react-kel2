@@ -10,6 +10,8 @@ import SectionFormCariMobil from "../components/SectionFormCariMobil";
 import SectionPageTitle from "../components/SectionPageTitle";
 import SectionFormHasilCariMobil from "../components/SectionFormHasilCariMobil";
 import SectionHasilPencarianMobil from "../components/SectionHasilPencarianMobil";
+import SectionDetailMobil from "../components/SectionDetailMobil";
+import SectionFormDetailMobil from "../components/SectionFormDetailMobil";
 
 export const router = createBrowserRouter([
   {
@@ -23,5 +25,9 @@ export const router = createBrowserRouter([
   {
     path: "/hasilcari",
     element: [<SectionPageTitle />, <SectionFormHasilCariMobil />, <SectionHasilPencarianMobil />],
+  },
+  {
+    path: "/detailmobil",
+    element: [<SectionPageTitle />, <SectionFormDetailMobil />, <SectionDetailMobil />],
   },
 ]);
