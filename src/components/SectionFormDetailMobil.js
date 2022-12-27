@@ -9,17 +9,17 @@ const SectionFormDetailMobil = () => {
           <div className="col-lg-12">
             <form className="row g-2">
               <div className="col-lg">
-                <label for="namaMobil" className="form-label">
+                <label htmlFor="namaMobil" className="form-label">
                   Nama Mobil
                 </label>
                 <input id="namaMobil" type="text" className="form-control" aria-describedby="emailHelp" placeholder="Ketik nama/tipe mobil" disabled />
               </div>
               <div className="col-lg">
-                <label for="kategoriMobil" className="form-label">
+                <label htmlFor="kategoriMobil" className="form-label">
                   Kategori
                 </label>
-                <select id="kategoriMobil" className="form-select" aria-label="Default select example" disabled>
-                  <option selected disabled>
+                <select defaultValue="default" id="kategoriMobil" className="form-select" aria-label="Default select example" disabled>
+                  <option value="default" disabled>
                     Masukan Kapasitas Mobil
                   </option>
                   <option value="small">2 - 4 orang</option>
@@ -28,11 +28,11 @@ const SectionFormDetailMobil = () => {
                 </select>
               </div>
               <div className="col-lg">
-                <label for="hargaMobil" className="form-label">
+                <label htmlFor="hargaMobil" className="form-label">
                   Harga
                 </label>
-                <select id="hargaMobil" className="form-select" aria-label="Default select example" disabled>
-                  <option selected disabled>
+                <select defaultValue="default" id="hargaMobil" className="form-select" aria-label="Default select example" disabled>
+                  <option value="default" disabled>
                     Masukan Harga Sewa per Hari
                   </option>
                   <option value="under400">&#60; Rp. 400.000</option>
@@ -41,12 +41,12 @@ const SectionFormDetailMobil = () => {
                 </select>
               </div>
               <div className="col-lg">
-                <label for="statusMobil" className="form-label">
+                <label htmlFor="statusMobil" className="form-label">
                   Status
                 </label>
                 <select id="statusMobil" className="form-select" aria-label="Default select example" disabled>
-                  <option selected>Disewa</option>
-                  <option value="free">Free</option>
+                  <option value={true}>Disewa</option>
+                  <option value={false}>Free</option>
                 </select>
               </div>
             </form>

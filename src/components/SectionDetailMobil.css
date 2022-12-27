@@ -20,7 +20,8 @@
   margin-bottom: 16px;
 }
 
-#detail-mobil .detailSubtitle {
+#detail-mobil .detailSubtitle,
+#detail-mobil .detailSubtitle button {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 8px;
@@ -37,18 +38,18 @@
   line-height: 175%;
 }
 
-#detail-mobil #refundAccordion .accordion-item {
+#detail-mobil .accordion .accordion-item {
   border: none;
 }
 
-#detail-mobil #refundAccordion .accordion-item .accordion-header .accordion-button {
+#detail-mobil .accordion .accordion-item .accordion-header .accordion-button {
   padding: 0px;
   background-color: transparent;
   color: #000;
   box-shadow: none;
 }
 
-#detail-mobil #refundAccordion .accordion-item #faq1 .accordion-body {
+#detail-mobil .accordion .accordion-item .accordion-body {
   padding: 0px;
 }
 
@@ -76,6 +77,50 @@
 
   #detail-mobil .kolomKanan {
     padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1401px) {
+  #detail-mobil .detailTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #detail-mobil .detailSubtitle,
+  #detail-mobil .detailSubtitle button {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #detail-mobil .detailList li {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 175%;
+  }
+
+  #detail-mobil .priceTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #detail-mobil .priceNumber {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    text-align: left;
   }
 }
 

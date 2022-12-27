@@ -24,9 +24,13 @@
   list-style-type: none;
 }
 #footer-car .footer-2 .footer-nav .footer-nav-item {
+  margin-bottom: 16px;
+}
+#footer-car .footer-2 .footer-nav .footer-nav-item a {
   font-weight: 400;
   font-size: 1.25rem;
-  margin-bottom: 16px;
+  text-decoration: none;
+  color: #000000;
 }
 
 #footer-car .footer-3 .footer-sosmed {
@@ -41,6 +45,55 @@
   margin-left: 0px !important;
 }
 
+@media only screen and (max-width: 1401px) {
+  #footer-car .footer-1 .address {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #footer-car .footer-1 .linkEmail {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #footer-car .footer-1 .telNumber {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #footer-car .footer-2 .footerLinkNav a {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #footer-car .footer-3 .footerSosmedTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 16px !important;
+  }
+
+  #footer-car .footer-4 .footerCopyright {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 16px !important;
+  }
+}
 @media only screen and (max-width: 768px) {
   #footer-car .footer-2 .footer-nav {
     padding-left: 0px;

@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import RenderLayout from "./RenderLayout";
 import SectionAbout from "../components/SectionAbout";
 import SectionWhyUs from "../components/SectionWhyUs";
 import SectionTestimonial from "../components/SectionTestimonial";
@@ -16,18 +17,18 @@ import SectionFormDetailMobil from "../components/SectionFormDetailMobil";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: [<SectionHeroBanner />, <SectionAbout />, <SectionWhyUs />, <SectionTestimonial />, <SectionCallToAction />, <SectionFrequentlyAskedQuestion />],
+    element: <RenderLayout children={[<SectionHeroBanner />, <SectionAbout />, <SectionWhyUs />, <SectionTestimonial />, <SectionCallToAction />, <SectionFrequentlyAskedQuestion />]} />,
   },
   {
     path: "/carimobil",
-    element: [<SectionHeroBannerCariMobil />, <SectionFormCariMobil />],
+    element: <RenderLayout children={[<SectionHeroBannerCariMobil />, <SectionFormCariMobil />]} />,
   },
   {
     path: "/hasilcari",
-    element: [<SectionPageTitle />, <SectionFormHasilCariMobil />, <SectionHasilPencarianMobil />],
+    element: <RenderLayout children={[<SectionPageTitle />, <SectionFormHasilCariMobil />, <SectionHasilPencarianMobil />]} />,
   },
   {
     path: "/detailmobil",
-    element: [<SectionPageTitle />, <SectionFormDetailMobil />, <SectionDetailMobil />],
+    element: <RenderLayout children={[<SectionPageTitle />, <SectionFormDetailMobil />, <SectionDetailMobil />]} />,
   },
 ]);

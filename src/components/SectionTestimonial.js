@@ -63,8 +63,8 @@ const SectionTestimonial = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col">
-            <h2 className="fs-1 fw-bold mb-4 text-center">Testimonial</h2>
-            <p className="fs-5 fw-bold mb-5 text-center">Berbagai review positif dari para pelanggan kami</p>
+            <h2 className="fs-1 fw-bold mb-4 text-center sectionTitle">Testimonial</h2>
+            <p className="fs-5 fw-bold mb-5 text-center sectionSubtitle">Berbagai review positif dari para pelanggan kami</p>
             <div className="myCarousel">
               <Carousel
                 centerMode={screenWidth > 464 ? true : false}
@@ -84,15 +84,15 @@ const SectionTestimonial = () => {
                   <div className="card-body">
                     <div className="row align-items-center">
                       <div className="col-lg-2">
-                        <img src={Client1} alt="testi-1" className="img-fluid client-img" />
+                        <img src={Client1} alt="testi-1" className="img-fluid clientImage" />
                       </div>
                       <div className="col-lg-10">
                         <img src={RatingStar} alt="rating" className="img-fluid mb-2" />
-                        <p className="fs-5 fw-bold mb-3">
+                        <p className="fs-5 fw-bold mb-3 testimonialDesc">
                           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod”
                         </p>
-                        <p className="">John Dee 32, Bromo</p>
+                        <p className="testimonialClient">John Dee 32, Bromo</p>
                       </div>
                     </div>
                   </div>
@@ -101,15 +101,15 @@ const SectionTestimonial = () => {
                   <div className="card-body">
                     <div className="row align-items-center">
                       <div className="col-lg-2">
-                        <img src={Client2} alt="testi-1" className="img-fluid client-img" />
+                        <img src={Client2} alt="testi-1" className="img-fluid clientImage" />
                       </div>
                       <div className="col-lg-10">
                         <img src={RatingStar} alt="rating" className="img-fluid mb-2" />
-                        <p className="fs-5 fw-bold mb-3">
+                        <p className="fs-5 fw-bold mb-3 testimonialDesc">
                           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod”
                         </p>
-                        <p className="">John Dee 32, Bromo</p>
+                        <p className="testimonialClient">John Dee 32, Bromo</p>
                       </div>
                     </div>
                   </div>
@@ -118,15 +118,15 @@ const SectionTestimonial = () => {
                   <div className="card-body">
                     <div className="row align-items-center">
                       <div className="col-lg-2">
-                        <img src={Client1} alt="testi-1" className="img-fluid client-img" />
+                        <img src={Client1} alt="testi-1" className="img-fluid clientImage" />
                       </div>
                       <div className="col-lg-10">
                         <img src={RatingStar} alt="rating" className="img-fluid mb-2" />
-                        <p className="fs-5 fw-bold mb-3">
+                        <p className="fs-5 fw-bold mb-3 testimonialDesc">
                           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod”
                         </p>
-                        <p className="">John Dee 32, Bromo</p>
+                        <p className="testimonialClient">John Dee 32, Bromo</p>
                       </div>
                     </div>
                   </div>

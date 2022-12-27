@@ -1,11 +1,15 @@
 /* Navbar/Header */
 
+html {
+  scroll-behavior: smooth;
+}
+
 #headerNavbar {
   background-color: #f1f3ff;
 }
 
 @media only screen and (min-width: 991px) {
-  nav#headerNavbar a.offcanvas-button {
+  nav#headerNavbar div.offcanvas-button {
     display: none;
   }
 }

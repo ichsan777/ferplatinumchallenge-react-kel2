@@ -64,7 +64,8 @@
 }
 @media only screen and (max-width: 991px) {
   #formPencarianDetailMobil {
-    margin-top: -30px;
+    margin-top: -230px;
+    margin-bottom: 50px;
     margin-right: 10px;
     margin-left: 10px;
   }
