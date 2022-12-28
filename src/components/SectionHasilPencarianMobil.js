@@ -57,12 +57,7 @@ const SectionHasilPencarianMobil = () => {
   // check hasil data filtering
   filteredCars = cars;
   filteringCars(filteredCars);
-  // check apabila array filtered cars kosong karena hasil filter tidak ditemukan, dan reassign data
-  // if (filteredCars.length === 0) {
-  //   filteredCars = cars;
-  // }
-
-  console.log(filterArr);
+  // console.log(filterArr);
 
   return (
     <section id="hasilPencarian">
