@@ -8,11 +8,10 @@ import SectionCallToAction from "../components/SectionCallToAction";
 import SectionFrequentlyAskedQuestion from "../components/SectionFrequentlyAskedQuestion";
 import SectionHeroBannerCariMobil from "../components/SectionHeroBannerCariMobil";
 import SectionFormCariMobil from "../components/SectionFormCariMobil";
-import SectionPageTitle from "../components/SectionPageTitle";
-import SectionFormHasilCariMobil from "../components/SectionFormHasilCariMobil";
-import SectionHasilPencarianMobil from "../components/SectionHasilPencarianMobil";
+import SectionPageTitle from "../Sections/SectionPageTitle";
 import SectionDetailMobil from "../components/SectionDetailMobil";
 import SectionFormDetailMobil from "../components/SectionFormDetailMobil";
+import PageHasilCari from "../pages/PageHasilCari";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +24,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/hasilcari",
-    element: <RenderLayout children={[<SectionPageTitle />, <SectionFormHasilCariMobil />, <SectionHasilPencarianMobil />]} />,
+    element: <RenderLayout children={<PageHasilCari />} />,
   },
   {
     path: "/detailmobil",

@@ -65,8 +65,8 @@ const SectionHasilPencarianMobil = () => {
         <div className="row rowContainer">
           <div className="col">
             <div className="row">
-              {filteredCars?.map((car) => {
-                return <CardMobil name={car.name} image={car.image} price={car.price} carID={car.id} />;
+              {filteredCars?.map((car, index) => {
+                return <CardMobil key={index} name={car.name} image={car.image} price={car.price} carID={car.id} />;
               })}
             </div>
           </div>
