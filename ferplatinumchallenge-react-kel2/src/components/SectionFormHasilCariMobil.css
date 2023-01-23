@@ -1,0 +1,76 @@
+/* Section Form Pencarian */
+
+#formPencarianHasilMobil {
+  padding-bottom: 0px;
+  z-index: 5;
+  position: relative;
+}
+
+#formPencarianHasilMobil .form-box {
+  border-radius: 8px;
+  padding: 30px 24px 24px 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  z-index: 4;
+  background-color: #fff;
+  position: relative;
+}
+#formPencarianHasilMobil .form-box:focus-within {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+#formPencarianHasilMobil .form-box form input,
+#formPencarianHasilMobil .form-box form select,
+#formPencarianHasilMobil .form-box form select option {
+  transition: 0.3s ease;
+}
+#formPencarianHasilMobil .form-box form select option {
+  padding: 10px 11px;
+}
+#formPencarianHasilMobil .form-box form select#statusMobil {
+  font-weight: 700;
+  color: #8a8a8a;
+}
+#formPencarianHasilMobil .form-box form input:focus {
+  border: solid 1px #35b0a7;
+  box-shadow: none;
+}
+#formPencarianHasilMobil .form-box form select:focus {
+  border: solid 1px #5cb85f;
+  box-shadow: none;
+}
+#formPencarianHasilMobil .form-box form option:hover {
+  background-color: #c9e7ca;
+  color: #5cb85f;
+  font-weight: 700;
+  box-shadow: none;
+}
+#formPencarianHasilMobil .form-box .buttonSubmit {
+  margin-top: 32px;
+  background-color: #fff;
+  border: solid 2px #0d28a6;
+  color: #0d28a6;
+  font-weight: 700;
+}
+#formPencarianHasilMobil .form-box .buttonSubmit:hover {
+  background-color: #051869;
+  color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+  #formPencarianHasilMobil .form-box .submitColumn {
+    width: 10%;
+  }
+  #formPencarianHasilMobil {
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (max-width: 991px) {
+  #formPencarianHasilMobil {
+    margin-top: -230px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* End of Section Form Pencarian */

@@ -1,0 +1,74 @@
+/* Section Form Cari Mobil */
+
+#formPencarianDetailMobil {
+  margin-bottom: 0px;
+  z-index: 5;
+  position: relative;
+}
+
+#formPencarianDetailMobil .form-box {
+  border-radius: 8px;
+  padding: 30px 24px 24px 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  z-index: 4;
+  background-color: #fff;
+  position: relative;
+}
+#formPencarianDetailMobil .form-box:focus-within {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+#formPencarianDetailMobil .form-box form input,
+#formPencarianDetailMobil .form-box form select,
+#formPencarianDetailMobil .form-box form select option {
+  transition: 0.3s ease;
+}
+#formPencarianDetailMobil .form-box form select option {
+  padding: 10px 11px;
+}
+#formPencarianDetailMobil .form-box form select#statusMobil {
+  font-weight: 700;
+  color: #8a8a8a;
+}
+#formPencarianDetailMobil .form-box form input:focus {
+  border: solid 1px #35b0a7;
+  box-shadow: none;
+}
+#formPencarianDetailMobil .form-box form select:focus {
+  border: solid 1px #5cb85f;
+  box-shadow: none;
+}
+#formPencarianDetailMobil .form-box form option:hover {
+  background-color: #c9e7ca;
+  color: #5cb85f;
+  font-weight: 700;
+  box-shadow: none;
+}
+#formPencarianDetailMobil .form-box .buttonSubmit {
+  margin-top: 32px;
+  background-color: #5cb85f;
+  border-color: #5cb85f;
+}
+#formPencarianDetailMobil .form-box .buttonSubmit:hover {
+  background-color: #3b923e;
+}
+
+@media only screen and (min-width: 992px) {
+  #formPencarianDetailMobil .form-box .submitColumn {
+    width: 10%;
+  }
+  #formPencarianDetailMobil {
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (max-width: 991px) {
+  #formPencarianDetailMobil {
+    margin-top: -230px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* End of Section Form Cari Mobil */

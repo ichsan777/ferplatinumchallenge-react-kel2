@@ -1,0 +1,99 @@
+section.section-custom-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bg-banner {
+  background-color: #f1f3ff;
+}
+
+/* section hero banner */
+
+#hero-banner .buttonSewaMobil {
+  background: #5cb85f;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  border: none;
+}
+#hero-banner .buttonSewaMobil:hover {
+  background: #3ea041;
+}
+
+#hero-banner .banner-right {
+  padding-top: 550px;
+}
+
+#hero-banner img.banner-img {
+  z-index: 3;
+  min-width: 85%;
+}
+
+#hero-banner .banner-shape {
+  width: 100%;
+  height: 50%;
+  border-radius: 60px 0 0 0;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1401px) {
+  #hero-banner .banner-left {
+    margin-left: 15% !important;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #hero-banner .banner-left {
+    margin-left: -20px;
+    margin-bottom: -60px;
+  }
+}
+@media only screen and (max-width: 1401px) {
+  #hero-banner .banner-right {
+    padding-top: 420px;
+  }
+
+  #hero-banner .banner-left .banner-title {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 150%;
+  }
+  #hero-banner .banner-left p {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-right: 25%;
+  }
+  #hero-banner .banner-left .buttonSewaMobil {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-banner .banner-left {
+    margin-right: 10%;
+  }
+  #hero-banner .banner-right {
+    padding-top: 400px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #hero-banner .banner-left p {
+    margin-right: 0;
+  }
+  #hero-banner .banner-right {
+    padding-top: 250px;
+  }
+  #hero-banner .banner-title {
+    line-height: 1.5em;
+    font-size: 2.5em;
+  }
+}
+
+/* end of section hero banner */

@@ -1,0 +1,118 @@
+/* Section Testimonial */
+
+#testimonial {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+#testimonial .carousel-testicard {
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#testimonial .testi-card {
+  background-color: #f1f3ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: none;
+  margin: 10px 15px;
+}
+
+#testimonial .myCarousel .navArrowContainerLeft {
+  width: 60px;
+  position: absolute;
+  left: 45vw;
+  margin-top: 30px;
+}
+#testimonial .myCarousel .navArrowContainerRight {
+  width: 60px;
+  position: absolute;
+  right: 45vw;
+  margin-top: 30px;
+}
+
+#testimonial .myCarousel .rightArrow,
+#testimonial .myCarousel .leftArrow {
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+#testimonial .myCarousel .rightArrow i,
+#testimonial .myCarousel .leftArrow i {
+  vertical-align: middle;
+}
+#testimonial .myCarousel .rightArrow i.fa-circle,
+#testimonial .myCarousel .leftArrow i.fa-circle {
+  color: #fff;
+  text-shadow: -1px 0 #c4c4c4, 0 1px #c4c4c4, 1px 0 #c4c4c4, 0 -1px #c4c4c4;
+  transition: 0.3s ease;
+}
+#testimonial .myCarousel .leftArrow,
+#testimonial .myCarousel .rightArrow {
+  color: #222;
+  transition: 0.3s ease;
+}
+#testimonial .myCarousel .rightArrow:hover i.fa-circle,
+#testimonial .myCarousel .leftArrow:hover i.fa-circle {
+  color: #5cb85f;
+  text-shadow: -1px 0 #5cb85f, 0 1px #5cb85f, 1px 0 #5cb85f, 0 -1px #5cb85f;
+}
+#testimonial .myCarousel .leftArrow:hover i.fa-chevron-left,
+#testimonial .myCarousel .rightArrow:hover i.fa-chevron-right {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1401px) {
+  #testimonial .sectionTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 36px;
+    margin-bottom: 16px !important;
+  }
+  #testimonial .sectionSubtitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 40px !important;
+  }
+  #testimonial .testimonialDesc {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #testimonial .testimonialClient {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #testimonial .testi-card .card-body {
+    padding: 69px 32px 49px 46px;
+  }
+  #testimonial .testi-card .clientImage {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #testimonial .myCarousel .navArrowContainerLeft {
+    left: 30vw;
+  }
+  #testimonial .myCarousel .navArrowContainerRight {
+    right: 30vw;
+  }
+  #testimonial .testi-card {
+    text-align: center;
+  }
+}
+
+/* End of Section Testimonial */

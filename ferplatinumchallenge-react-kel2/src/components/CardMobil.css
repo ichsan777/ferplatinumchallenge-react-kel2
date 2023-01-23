@@ -1,0 +1,68 @@
+#hasilPencarian .cardMobil {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: none;
+  padding: 24px;
+  padding-top: 55px;
+  margin-bottom: 10px;
+}
+
+#hasilPencarian .cardMobil .card-body {
+  padding: 0px;
+}
+#hasilPencarian .cardMobil .gambarMobil {
+  margin-bottom: 45px;
+}
+#hasilPencarian .cardMobil .namaMobil {
+  margin-bottom: 8px;
+}
+#hasilPencarian .cardMobil .hargaMobil {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#hasilPencarian .cardMobil .deskripsiMobil {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#hasilPencarian .cardMobil .btnPilihMobil {
+  background-color: #5cb85f;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: 0.3s ease;
+}
+#hasilPencarian .cardMobil .btnPilihMobil:hover {
+  background-color: #3b923e;
+}
+
+@media only screen and (max-width: 1401px) {
+  #hasilPencarian .cardMobil .namaMobil {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #hasilPencarian .cardMobil .hargaMobil {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+  #hasilPencarian .cardMobil .deskripsiMobil {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #hasilPencarian .cardMobil {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,55 @@
+/* Section Why Us */
+
+#whyus {
+  padding-bottom: 60px;
+}
+
+#whyus .custom-Card-Whyus {
+  border-radius: 12px;
+  border-width: 2px;
+}
+#whyus .custom-Card-Whyus .card-body {
+  padding: 25px;
+}
+#whyus .custom-Card-Whyus .fa-Custom-Whyus {
+  font-size: 1.5em;
+}
+#whyus .custom-Card-Whyus .fa-Custom-Whyus i {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1401px) {
+  #whyus .sectionTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 36px;
+    margin-bottom: 16px !important;
+  }
+  #whyus .sectionSubtitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 40px !important;
+  }
+  #whyus .custom-Card-Whyus .whyusTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 24px;
+    margin-bottom: 16px !important;
+  }
+  #whyus .custom-Card-Whyus .whyusSubtitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+}
+
+/* End of Section Why Us */

@@ -1,0 +1,103 @@
+/* Footer Website */
+
+#footer-car {
+  padding-bottom: 100px;
+}
+#footer-car .row .footer-col {
+  margin-bottom: 1.25rem;
+}
+
+#footer-car .footer-1 a {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #212529;
+  transition: 0.3s ease;
+}
+#footer-car .footer-1 a:hover {
+  color: #0d28a6;
+}
+
+#footer-car .footer-2 .footer-nav {
+  list-style-type: none;
+}
+#footer-car .footer-2 .footer-nav .footer-nav-item {
+  margin-bottom: 16px;
+}
+#footer-car .footer-2 .footer-nav .footer-nav-item a {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+#footer-car .footer-3 .footer-sosmed {
+  display: inline-block;
+  margin: 0 8px;
+  transition: 0.3s ease;
+}
+#footer-car .footer-3 .footer-sosmed:hover {
+  opacity: 0.75;
+}
+#footer-car .footer-3 .footer-sosmed-first {
+  margin-left: 0px !important;
+}
+
+@media only screen and (max-width: 1401px) {
+  #footer-car .footer-1 .address {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #footer-car .footer-1 .linkEmail {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #footer-car .footer-1 .telNumber {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #footer-car .footer-2 .footerLinkNav a {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  #footer-car .footer-3 .footerSosmedTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 16px !important;
+  }
+
+  #footer-car .footer-4 .footerCopyright {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 16px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #footer-car .footer-2 .footer-nav {
+    padding-left: 0px;
+  }
+}
+
+/* End of Footer Website */
