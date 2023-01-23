@@ -1,11 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import RenderLayout from "./RenderLayout";
-import SectionAbout from "../Sections/SectionAbout";
-import SectionWhyUs from "../Sections/SectionWhyUs";
-import SectionTestimonial from "../components/SectionTestimonial";
-import SectionHeroBanner from "../Sections/SectionHeroBanner";
-import SectionCallToAction from "../components/SectionCallToAction";
-import SectionFrequentlyAskedQuestion from "../components/SectionFrequentlyAskedQuestion";
 import SectionHeroBannerCariMobil from "../components/SectionHeroBannerCariMobil";
 import SectionFormCariMobil from "../components/SectionFormCariMobil";
 import SectionPageTitle from "../Sections/SectionPageTitle";
