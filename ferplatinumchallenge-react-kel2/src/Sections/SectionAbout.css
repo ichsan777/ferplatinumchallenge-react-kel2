@@ -1,0 +1,75 @@
+/* Section About */
+
+#about {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+#about .about-img {
+  width: 90%;
+  height: auto;
+}
+
+#about ul.about-list {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#about ul.about-list li {
+  padding-left: 35px;
+  margin-bottom: 16px;
+}
+#about ul.about-list li::before {
+  content: url("../assets/img/Group\ 53.png");
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+@media only screen and (max-width: 1401px) {
+  #about .sectionTitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 36px;
+    margin-bottom: 24px !important;
+  }
+  #about .sectionSubtitle {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-bottom: 16px !important;
+  }
+  #about .about-list li {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  #about ul.about-list li::before {
+    top: -2px;
+  }
+  #about .about-img {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #about {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #about .about-img {
+    width: 90%;
+  }
+  #about .sectionTitle {
+    margin-bottom: 16px !important;
+  }
+}
+
+/* End of section About */
