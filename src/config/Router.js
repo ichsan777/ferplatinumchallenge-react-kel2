@@ -7,6 +7,7 @@ import SectionDetailMobil from "../components/SectionDetailMobil";
 import SectionFormDetailMobil from "../components/SectionFormDetailMobil";
 import PageHasilCari from "../pages/PageHasilCari";
 import PageHome from "../pages/PageHome";
+import PageDetailMobil from "../pages/PageDetailMobil";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/detailmobil",
-    element: <RenderLayout children={[<SectionPageTitle />, <SectionFormDetailMobil />, <SectionDetailMobil />]} />,
+    element: <RenderLayout children={[<PageDetailMobil />]} />,
   },
 ]);
