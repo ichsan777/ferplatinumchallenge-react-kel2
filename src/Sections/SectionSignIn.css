@@ -1,0 +1,24 @@
+.iconLoginRegister {
+  background-image: url("../assets/img/IconForLoginRegister.png");
+  margin-bottom: 32px;
+  width: 100px;
+  height: 34px;
+}
+
+.signInTitle {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.heroSection {
+  min-height: 100vh;
+  background-image: url("../assets/img/BackgroundforLoginRegister.png");
+  background-size: cover;
+  background-color: #0d28a6;
+  background-position: center;
+}

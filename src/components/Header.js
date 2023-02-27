@@ -10,6 +10,11 @@ function OffCanvasExample({ ...props }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const navigate = useNavigate();
+  const handleRegisterButton = () => {
+    navigate("/signup");
+  };
+
   //note : tidak pakai NavLink/Link karena tidak support scroll to section
 
   return (
@@ -43,6 +48,9 @@ function OffCanvasExample({ ...props }) {
                 FAQ
               </a>
             </li>
+            <button className="registerButton" key="offcanvas-5" onClick={handleRegisterButton}>
+              Register
+            </button>
           </ul>
         </Offcanvas.Body>
       </Offcanvas>
@@ -56,6 +64,10 @@ const DefaultHeader = () => {
   const handleLogoClick = () => {
     navigate("/");
   };
+  const handleRegisterButton = () => {
+    navigate("/signup");
+  };
+
   return (
     <nav id="headerNavbar" className="navbar navbar-expand-lg navbar-light">
       <div className="container">
@@ -87,6 +99,9 @@ const DefaultHeader = () => {
                 FAQ
               </a>
             </li>
+            <button className="registerButton" key="navbar-4" onClick={handleRegisterButton}>
+              Register
+            </button>
           </ul>
         </div>
         <OffCanvasExample placement="end" />

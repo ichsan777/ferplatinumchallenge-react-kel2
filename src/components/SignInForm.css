@@ -1,0 +1,33 @@
+.form-label {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+}
+.form-control {
+  padding: 10px 15px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-control::placeholder {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 18px;
+  color: #c7c7c7;
+}
+.signInButton {
+  background: #0d28a6;
+  border-radius: 2px;
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 5px;
+}

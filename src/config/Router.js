@@ -4,6 +4,8 @@ import PageHasilCari from "../pages/PageHasilCari";
 import PageHome from "../pages/PageHome";
 import PageCariMobil from "../pages/PageCariMobil";
 import PageDetailMobil from "../pages/PageDetailMobil";
+import PageSignIn from "../pages/PageSignIn";
+import PageSignUp from "../pages/PageSignUp";
 
 export const router = createBrowserRouter([
   {
@@ -21,5 +23,13 @@ export const router = createBrowserRouter([
   {
     path: "/detailmobil",
     element: <RenderLayout children={[<PageDetailMobil />]} />,
+  },
+  {
+    path: "/signin",
+    element: <PageSignIn />,
+  },
+  {
+    path: "/signup",
+    element: <PageSignUp />,
   },
 ]);
