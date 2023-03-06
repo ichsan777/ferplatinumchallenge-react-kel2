@@ -8,6 +8,7 @@ import PageSignIn from "../pages/PageSignIn";
 import PageSignUp from "../pages/PageSignUp";
 import PagePembayaran from "../components/pembayaran/index";
 import { PublicRoute, PrivateRoute } from "./RouteHandler";
+import PagepdfDownload from "../pages/PagepdfDownload";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,9 +19,8 @@ export const router = createBrowserRouter(
       <Route exact path="/detailmobil" element={<RenderLayout children={<PageDetailMobil />} />} />
       <Route exact path="/signin" element={<PageSignIn />} />
       <Route exact path="/signup" element={<PageSignUp />} />
-      <Route element={<PrivateRoute />}>
-        <Route exact path="/pembayaran" element={<RenderLayout Children={<PagePembayaran />} />} />
-      </Route>
+      <Route exact path="/pembayaran" element={<PrivateRoute Children={<RenderLayout children={<PagePembayaran />} />} />} />
+      <Route exact path="/pdfdownload" element={<PrivateRoute Children={<RenderLayout children={<PagepdfDownload />} />} />} />
     </>
   )
 );

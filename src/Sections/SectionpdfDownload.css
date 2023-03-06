@@ -1,0 +1,23 @@
+.pdfHeader {
+  background-color: #f1f3ff;
+  height: 100px;
+}
+
+.icondownload {
+  height: 36px;
+  width: 97px;
+}
+.group {
+  max-width: 800px;
+  margin: auto;
+}
+img.view {
+  height: 162px;
+  width: 557px;
+}
+
+.button {
+  color: white;
+  border: 0;
+  background-color: white;
+}

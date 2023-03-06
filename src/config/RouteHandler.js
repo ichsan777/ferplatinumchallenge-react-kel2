@@ -28,7 +28,7 @@ export const PrivateRoute = ({ Children }) => {
 
   const loginStatus = handleStatus();
 
-  return loginStatus ? <Navigate to="/pembayaran" /> : <Navigate to="/signin" />;
+  return loginStatus ? <>{Children}</> : <Navigate to="/signin" />;
 };
 
 export default PrivateRoute;
