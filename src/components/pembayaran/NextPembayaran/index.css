@@ -1,0 +1,316 @@
+@media screen and (max-width: 991px) {
+  .noneHp {
+    display: none;
+  }
+  .nextPembayaran {
+    display: block !important;
+  }
+  .nextPembayaran > .startHero {
+    width: 75vw !important;
+  }
+  .nextPembayaran > .endHero {
+    width: 65vw !important;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .gambarPreview {
+    width: 80% !important;
+    height: 30vh !important;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi {
+    position: fixed !important;
+    bottom: 0vh !important;
+    padding-bottom: 5vh;
+    left: 0;
+    width: 100vw !important;
+    z-index: 99;
+    font-family: Arial;
+    background-color: #eeeeee;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi > .judul {
+    margin-top: 2vh;
+    text-align: start;
+    padding: 0 5vw;
+    display: block !important;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi > .tombolKonfirmasi {
+    background-color: blue;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi > .tombolPesanan {
+    background-color: white !important;
+    color: blue !important;
+    border: 1px solid blue;
+    margin-top: 2vh !important;
+    font-weight: bold;
+    font-size: 1em !important;
+    letter-spacing: 0.2px;
+    font-family: Arial;
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nextPembayaran {
+    margin: 0 !important;
+  }
+  .nextPembayaran > .startHero {
+    width: 100vw !important;
+  }
+
+  .noneHp {
+    display: none !important;
+  }
+  .nextPembayaran > .endHero {
+    width: 95vw !important;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .nextPembayaran > .endHero > .konfirmasiPembayaran > .tombolKonfirmasi {
+    width: 100% !important;
+  }
+}
+
+.nextPembayaran {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  padding: 5vh 0;
+}
+
+.nextPembayaran > .startHero {
+  width: 55%;
+}
+
+.nextPembayaran > .startHero * {
+  font-size: 1em;
+  font-family: Arial;
+}
+
+.nextPembayaran > .startHero > .timeBayar {
+  display: flex;
+  border-radius: 8px;
+  padding: 2vh;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  justify-content: space-between;
+}
+
+.nextPembayaran > .startHero > .timeBayar > .containerJudul > h3 {
+  font-weight: 700;
+}
+
+.nextPembayaran > .startHero > .timeBayar > .containerJudul > p {
+  font-size: 0.8em;
+  color: #3c3c3c !important;
+  margin: 0;
+}
+
+.nextPembayaran > .startHero > .timeBayar > .time > .child {
+  padding: 1vh 0 !important;
+
+  color: white;
+  padding-right: 1vw;
+  background-color: #e41e17;
+  font-size: 0.9em !important;
+}
+/* END TIME BAYAR  */
+
+/* START NEXT TRANSFER  */
+.nextPembayaran > .startHero > .nextTransfer {
+  border-radius: 8px;
+  margin: 3vh 0;
+  padding: 4vh 2vw;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .judul {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .jenisBank {
+  align-items: start;
+  display: flex;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .jenisBank > .logoBank {
+  padding: 2vh 2vw;
+  border: 1px solid white;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .jenisBank > .detailBank {
+  padding-top: 2vh;
+  margin-left: 1vw;
+  font-size: 0.8em;
+}
+.nextPembayaran > .startHero > .nextTransfer > .jenisBank > .detailBank > p {
+  margin-bottom: 1vh;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .inputUser {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .inputUser > label {
+  font-size: 0.87em;
+  margin: 1vh 0;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .inputUser > p {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  font-size: 0.8em;
+  margin-bottom: 1vh;
+  font-weight: 300;
+  padding: 1vh 1vw;
+  border: 1px solid black;
+  font-family: sans-serif;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .inputUser > p > svg {
+  position: absolute;
+
+  right: 1vw;
+}
+
+.nextPembayaran > .startHero > .nextTransfer > .inputUser > .total {
+  font-weight: bold;
+  color: black;
+}
+
+/* END NEXT TRANSFER  */
+
+/* INSTRUKSI PEMBAYARAN */
+.nextPembayaran > .startHero > .instruksiPembayaran {
+  border-radius: 8px;
+
+  padding: 4vh 2vw;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .judul {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .navsInstruksi {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .navsInstruksi > button {
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  font-family: Arial;
+  font-size: 0.9em;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .navsInstruksi > .instruksiActive {
+  border-bottom: 1px solid green;
+  font-weight: 700;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .instruksi {
+  margin: 2vh 0;
+}
+
+.nextPembayaran > .startHero > .instruksiPembayaran > .instruksi > li {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+/* END INSTRUKSI PEMBAYARAN */
+
+/* AKHIR START HERO  */
+
+/* AWAL END HERO */
+
+.nextPembayaran > .endHero {
+  width: 43%;
+  margin-left: 2vw;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran {
+  width: 100%;
+  font-size: 0.8em;
+  padding: 2vh 1vw 7vh;
+  border-radius: 8px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid inherit;
+  position: relative;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .judul {
+  font: 700 1em Arial;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .judulPembayaran {
+  font: 400 0.95em Arial;
+  line-height: 20 px;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .gambarPreview {
+  width: 80%;
+  margin: 0 auto 3vh;
+  height: 20vh;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  border: 1px dashed #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .gambarPreview > img {
+  width: 80%;
+  height: 20vh;
+}
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .gambarPreview > svg {
+  width: 4vw;
+  height: 4vh;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran .containerKonfirmasi {
+  position: absolute;
+  width: 90%;
+  bottom: 1vh;
+}
+.nextPembayaran > .endHero > .konfirmasiPembayaran .containerKonfirmasi > .judul {
+  display: none;
+}
+.nextPembayaran > .endHero > .konfirmasiPembayaran .containerKonfirmasi > button {
+  background-color: green;
+  width: 90%;
+  display: block;
+  padding: 1vh 0;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  margin: auto !important;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi > .tombolPesanan {
+  display: none;
+}
+
+.nextPembayaran > .endHero > .konfirmasiPembayaran > .containerKonfirmasi > .tombolKonfirmasi > .inputFile {
+  width: 87%;
+  position: absolute;
+  left: 2vw;
+  opacity: 0;
+  background-color: red;
+}
+
+/* AKHIR END HERO */

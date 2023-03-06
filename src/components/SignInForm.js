@@ -33,9 +33,9 @@ const SignInForm = () => {
     axios
       .post(`${urlAPI}/customer/auth/login`, datas, config)
       .then(async (res) => {
-        const accessToken = res.data.access_token;
-        localStorage.setItem("accessToken", JSON.stringify(accessToken));
-        navigate(-1);
+        const tempAccessToken = await res.data.access_token;
+        localStorage.setItem("accessToken", JSON.stringify(tempAccessToken));
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);

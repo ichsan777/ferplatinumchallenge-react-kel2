@@ -35,9 +35,8 @@ const SignUpForm = () => {
     axios
       .post(`${urlAPI}/customer/auth/login`, datas, config)
       .then(async (res) => {
-        const accessToken = res.data.access_token;
-        localStorage.setItem("accessToken", JSON.stringify(accessToken));
-        navigate(-1);
+        localStorage.setItem("accessToken", true);
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);
