@@ -26,7 +26,7 @@ const SectionpdfDownload = () => {
         <div className="text1 text-center">Pembayaran Berhasil!</div>
         <div className="text2 text-center">Tunjukkan invoice ini ke petugas BCR di titik temu.</div>
       </div>
-      <div className="d-flex flex-column justify-content-center group mt-5 mb-5 border">
+      <div className="d-flex flex-column justify-content-center group mt-5 mb-5 border rounded">
         <div className="d-flex flex-row justify-content-between p-3 ms-5">
           <div className="text1">Invoice</div>
           <div>

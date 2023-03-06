@@ -1,8 +1,10 @@
 import "./index.css";
 import { useState, useEffect } from "react";
 import HeaderPembayaran from "../header/HeaderPembayaran";
+import { useNavigate } from "react-router-dom";
 
 export default function NextPembayaran(props) {
+  const navigate = useNavigate();
   const { data } = props;
   const [total, setTotal] = useState(data.subtotal);
   const [batasWaktu, setBatasWaktu] = useState(null);
@@ -147,7 +149,7 @@ export default function NextPembayaran(props) {
       return false;
     }
     function sukses(e) {
-      alert("pembayaran berhasil");
+      navigate("/pdfdownload");
     }
     const konfirmasi = {
       judul: "Konfirmasi Pembayaran",

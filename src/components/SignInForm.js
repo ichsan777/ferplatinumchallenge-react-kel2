@@ -9,7 +9,7 @@ const SignInForm = () => {
     passwordCust: "",
   };
   const [values, setValues] = useState(initialValues);
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setValues({
