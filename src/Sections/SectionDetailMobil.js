@@ -157,6 +157,10 @@ const SectionDetailMobil = () => {
 
     const tanggalSewa = new AirDatepicker("#tanggalSewa", options);
 
+    if (!idMobil) {
+      navigate("/cariMobil");
+    }
+
     axios
       .get(`${urlAPI}/admin/car/${idMobil}`, config)
       .then(async (res) => {
@@ -168,9 +172,6 @@ const SectionDetailMobil = () => {
       });
   }, []);
 
-  if (!idMobil) {
-    navigate("/cariMobil");
-  }
   return (
     <section id="detail-mobil">
       <div className="container">
